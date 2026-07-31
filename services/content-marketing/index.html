@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Content Marketing — Marketing Events Limited</title>
+  <meta name="description" content="Content briefed around the questions your buyers ask right before they convert. Run in-house by Marketing Events Limited, not outsourced." />
+  <link rel="canonical" href="https://marketing-events-limited.marketing/services/content-marketing/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Content Marketing — Marketing Events Limited" />
+  <meta property="og:description" content="Content briefed around the questions your buyers ask right before they convert. Run in-house by Marketing Events Limited, not outsourced." />
+  <meta property="og:url" content="https://marketing-events-limited.marketing/services/content-marketing/" />
+  <meta property="og:site_name" content="Marketing Events Limited" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Content Marketing — Marketing Events Limited" />
+  <meta name="twitter:description" content="Content briefed around the questions your buyers ask right before they convert. Run in-house by Marketing Events Limited, not outsourced." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Marketing Events Limited","legalName":"MARKETING EVENTS LIMITED","url":"https://marketing-events-limited.marketing/","email":"contact@marketing-events-limited.marketing","telephone":"+44 161 496 0184","description":"Marketing Events Limited is a full-service marketing agency for Education & EdTech, Real Estate, Fintech, and E-commerce & DTC companies — 7 core services, 3 documented case studies, one senior team with no junior handoffs.","address":{"@type":"PostalAddress","streetAddress":"RPG The Copper Room, Trinity Way, Salford, England M3 7BG"},"identifier":{"@type":"PropertyValue","name":"Company No.","value":"12480079"}}</script>
+  <style>
+    :root {
+      --paper: #ECEAE3;
+      --surface: #FFFFFF;
+      --hot: #FF2D00;
+      --ink2: #17150F;
+      --ink: #17150F;
+      --muted: #6B6656;
+      --font-display: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+      --font-body: "Archivo", Helvetica, Arial, sans-serif;
+      --font-mono: "Space Mono", "Courier New", ui-monospace, monospace;
+
+      --rule: var(--ink);
+      --rule-soft: color-mix(in srgb, var(--ink) 18%, transparent);
+      --rule-faint: color-mix(in srgb, var(--ink) 9%, transparent);
+      --body-ink: color-mix(in srgb, var(--ink) 92%, transparent);
+      --paper-2: color-mix(in srgb, var(--ink) 4%, var(--paper));
+      --on-ink: color-mix(in srgb, var(--paper) 96%, white);
+      --hot-ink: color-mix(in srgb, var(--hot) 78%, black);
+      --edge: clamp(1.25rem, 5vw, 5rem);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      color-scheme: light dark;
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--paper);
+      color: var(--body-ink);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    /* faint hard-grid atmosphere — vertical hairlines + a whisper of tone.
+       flat colors and CSS gradients only, no external image references, so
+       it stays PFI-safe. */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image:
+        repeating-linear-gradient(90deg, color-mix(in srgb, var(--ink) 3.5%, transparent) 0 1px, transparent 1px clamp(52px, 8vw, 96px)),
+        radial-gradient(120% 60% at 100% -10%, color-mix(in srgb, var(--hot) 6%, transparent), transparent 60%);
+    }
+
+    header, main, footer { position: relative; z-index: 1; }
+
+    a { color: inherit; }
+    svg { max-width: 100%; display: block; }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      color: var(--ink);
+      font-weight: 800;
+      line-height: 0.98;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.5em;
+      text-wrap: balance;
+    }
+
+    p { margin: 0 0 1.15rem; text-wrap: pretty; }
+    p:last-child { margin-bottom: 0; }
+
+    ::selection { background: var(--hot); color: var(--on-ink); }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid var(--hot);
+      outline-offset: 2px;
+    }
+
+    .pr-skip {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--ink);
+      color: var(--on-ink);
+      padding: 0.85rem 1.3rem;
+      z-index: 80;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .pr-skip:focus { left: 0; }
+
+    /* ---------- layout ---------- */
+
+    .pr-wrap {
+      width: 100%;
+      max-width: 1360px;
+      margin-inline: auto;
+      padding-inline: var(--edge);
+    }
+
+    .pr-sec { padding: clamp(3rem, 7vw, 6.5rem) 0; border-top: 2px solid var(--rule); }
+    .pr-sec--flush { border-top: none; }
+    .pr-sec--tight { padding-top: clamp(2.4rem, 5vw, 4rem); }
+
+    /* ---------- brutalist furniture ---------- */
+
+    .pr-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--hot-ink);
+      margin: 0 0 1.4rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5ch;
+    }
+    .pr-tag__slash { color: color-mix(in srgb, var(--ink) 40%, transparent); }
+    .pr-tag--invert { color: var(--hot); }
+
+    .pr-head { margin-bottom: clamp(2rem, 4vw, 3.2rem); }
+    .pr-head__title {
+      font-size: clamp(1.9rem, 5vw, 3.6rem);
+      text-transform: uppercase;
+      max-width: 20ch;
+    }
+
+    .pr-standfirst {
+      font-size: clamp(1.05rem, 1.7vw, 1.32rem);
+      line-height: 1.5;
+      color: color-mix(in srgb, var(--ink) 82%, transparent);
+      max-width: 52ch;
+      margin: 1.2rem 0 0;
+    }
+
+    .pr-prose { max-width: 66ch; }
+    .pr-prose p { font-size: 1.05rem; line-height: 1.68; }
+    .pr-prose h3 {
+      margin-top: 2.6rem;
+      font-size: clamp(1.15rem, 2vw, 1.5rem);
+      text-transform: uppercase;
+    }
+    .pr-prose--lead > p:first-child {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(1.35rem, 2.6vw, 1.95rem);
+      line-height: 1.24;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      text-transform: none;
+      margin-bottom: 1.4rem;
+    }
+
+    .pr-fnote {
+      margin-top: 1.6rem;
+      padding-top: 0.95rem;
+      border-top: 1px solid var(--rule-soft);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 76ch;
+    }
+    .pr-fnote a { color: var(--hot-ink); }
+    .pr-fnote__star { color: var(--hot-ink); font-weight: 700; }
+
+    /* ---------- buttons / links ---------- */
+
+    .pr-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.9ch;
+      isolation: isolate;
+      border: 2px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.05rem 1.5rem;
+      cursor: pointer;
+      overflow: hidden;
+      transition: color 0.28s ease;
+    }
+    .pr-btn > span { position: relative; z-index: 1; }
+    .pr-btn__mark { transition: transform 0.32s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .pr-btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: var(--hot);
+      transform: translateX(-101%);
+      transition: transform 0.36s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .pr-btn:hover, .pr-btn:focus-visible { color: var(--on-ink); border-color: var(--hot); }
+    .pr-btn:hover::before, .pr-btn:focus-visible::before { transform: translateX(0); }
+    .pr-btn:hover .pr-btn__mark { transform: translateX(0.35rem); }
+
+    .pr-btn--solid { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+    .pr-btn--solid:hover, .pr-btn--solid:focus-visible { color: var(--on-ink); border-color: var(--hot); }
+
+    .pr-btn--paper { border-color: var(--on-ink); color: var(--on-ink); }
+    .pr-btn--paper::before { background: var(--on-ink); }
+    .pr-btn--paper:hover, .pr-btn--paper:focus-visible { color: var(--ink2); border-color: var(--on-ink); }
+
+    .pr-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7ch;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .pr-link::after { content: "\2192"; color: var(--hot-ink); transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .pr-link > span {
+      background-image: linear-gradient(var(--hot), var(--hot));
+      background-size: 100% 2px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      padding-bottom: 0.2rem;
+      transition: background-size 0.34s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .pr-link:hover > span, .pr-link:focus-visible > span { background-size: 0% 2px; }
+    .pr-link:hover::after, .pr-link:focus-visible::after { transform: translateX(0.3rem); }
+
+    /* ---------- top bar ---------- */
+
+    .pr-top {
+      background: var(--surface);
+      border-bottom: 2px solid var(--ink);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+
+    .pr-wire {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--rule-soft);
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .pr-wire a { color: var(--hot-ink); text-decoration: none; }
+    .pr-wire a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .pr-wire__hot { color: var(--hot-ink); }
+
+    .pr-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem 2rem;
+      flex-wrap: wrap;
+      padding: 0.85rem 0;
+    }
+
+    .pr-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .pr-brand__bar {
+      width: 0.55rem;
+      height: 1.55rem;
+      background: var(--hot);
+      flex: none;
+      transform: skewX(-9deg);
+    }
+    .pr-brand__name {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(1.12rem, 2vw, 1.4rem);
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .pr-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem 1.5rem;
+    }
+    .pr-nav__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55ch;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--muted);
+      padding: 0.2rem 0;
+      transition: color 0.22s ease;
+    }
+    .pr-nav__dot {
+      width: 0.34rem;
+      height: 0.34rem;
+      background: var(--hot);
+      opacity: 0;
+      transform: scale(0.5);
+      transition: opacity 0.22s ease, transform 0.22s ease;
+    }
+    .pr-nav__link:hover, .pr-nav__link:focus-visible { color: var(--ink); }
+    .pr-nav__link:hover .pr-nav__dot, .pr-nav__link:focus-visible .pr-nav__dot { opacity: 1; transform: scale(1); }
+
+    .pr-bar .pr-btn { padding: 0.7rem 1.1rem; }
+
+    /* ---------- hero ---------- */
+
+    .pr-hero { padding: clamp(2.6rem, 6vw, 5.5rem) 0 clamp(2.6rem, 5vw, 4.5rem); }
+
+    .pr-hero__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2rem, 5vw, 3.5rem);
+    }
+    @media (min-width: 980px) {
+      .pr-hero__grid { grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.8fr); align-items: end; }
+    }
+
+    .pr-hero__title {
+      font-size: clamp(2.6rem, 8.4vw, 6.6rem);
+      line-height: 0.9;
+      text-transform: uppercase;
+      letter-spacing: -0.025em;
+      margin: 0.6rem 0 0;
+      overflow-wrap: break-word;
+    }
+    .pr-hero__title .pr-w { display: inline-block; }
+    .pr-hero__title .pr-w:nth-child(3n) { color: var(--hot); }
+
+    .pr-hero__meta {
+      margin-top: 2.2rem;
+      padding-top: 1.1rem;
+      border-top: 2px solid var(--ink);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .pr-hero__meta b { color: var(--hot-ink); font-weight: 700; }
+    .pr-hero__meta span::before { content: "\25B8"; color: var(--hot); margin-right: 0.6ch; }
+    .pr-hero__meta span:first-of-type::before { content: none; }
+
+    .pr-hero__side {
+      border-top: 2px solid var(--ink);
+      padding-top: 1.3rem;
+    }
+    .pr-hero__lede { font-size: 1.06rem; line-height: 1.55; color: color-mix(in srgb, var(--ink) 84%, transparent); }
+    .pr-hero__actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.8rem; }
+
+    .pr-index { list-style: none; margin: 1.8rem 0 0; padding: 0; }
+    .pr-index li { border-top: 1px solid var(--rule-soft); }
+    .pr-index li:first-child { border-top: none; }
+    .pr-index a {
+      display: grid;
+      grid-template-columns: 2.2rem 1fr auto;
+      align-items: baseline;
+      gap: 0.9ch;
+      padding: 0.72rem 0;
+      text-decoration: none;
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.24s ease, padding-left 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .pr-index a:hover { color: var(--hot-ink); padding-left: 0.5rem; }
+    .pr-index .pr-index__n { color: var(--muted); }
+    .pr-index .pr-index__c { color: var(--muted); font-size: 0.68rem; }
+
+    /* ---------- numbered rows (services / journal) ---------- */
+
+    .pr-rows { border-top: 2px solid var(--ink); }
+
+    .pr-row {
+      position: relative;
+      display: grid;
+      grid-template-columns: 3.4rem minmax(0, 1.1fr) minmax(0, 1.5fr) 2.2rem;
+      gap: 0.4rem 1.6rem;
+      align-items: center;
+      padding: clamp(1.2rem, 2.4vw, 1.85rem) 0;
+      border-bottom: 1px solid var(--ink);
+      text-decoration: none;
+      color: inherit;
+      overflow: hidden;
+    }
+    @media (max-width: 820px) {
+      .pr-row { grid-template-columns: 2.6rem minmax(0, 1fr); }
+      .pr-row__sum { grid-column: 2; color: var(--muted); }
+      .pr-row__go { display: none; }
+    }
+
+    .pr-row::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--ink2);
+      transform: translateY(101%);
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      z-index: 0;
+    }
+    .pr-row > * { position: relative; z-index: 1; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.3s ease; }
+    .pr-row:hover::before, .pr-row:focus-visible::before { transform: translateY(0); }
+    .pr-row:hover > *, .pr-row:focus-visible > * { transform: translateX(0.5rem); }
+    .pr-row:hover .pr-row__title, .pr-row:focus-visible .pr-row__title { color: var(--on-ink); }
+    .pr-row:hover .pr-row__sum, .pr-row:focus-visible .pr-row__sum { color: color-mix(in srgb, var(--on-ink) 74%, transparent); }
+    .pr-row:hover .pr-row__n, .pr-row:hover .pr-row__go { color: var(--hot); }
+
+    .pr-row__n { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; color: var(--hot-ink); }
+    .pr-row__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.3rem, 2.6vw, 2.05rem); line-height: 1.02; text-transform: uppercase; letter-spacing: -0.02em; color: var(--ink); }
+    .pr-row__sum { color: var(--muted); font-size: 0.96rem; line-height: 1.5; }
+    .pr-row__go { justify-self: end; color: color-mix(in srgb, var(--ink) 40%, transparent); font-size: 1.2rem; }
+
+    /* ---------- record (metrics) ---------- */
+
+    /* container-responsive so a 3-up band never overflows a narrow aside:
+       columns pack to whatever the container fits, dropping to 2/1 when tight. */
+    .pr-record {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.75rem), 1fr));
+      border-top: 2px solid var(--ink);
+      border-left: 2px solid var(--ink);
+    }
+
+    .pr-fig {
+      min-width: 0;
+      padding: clamp(1.3rem, 2.6vw, 2rem) clamp(1.1rem, 2vw, 1.6rem);
+      border-right: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .pr-fig__val {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+      color: var(--hot);
+      overflow-wrap: anywhere;
+    }
+    .pr-fig__star { color: var(--muted); text-decoration: none; font-size: 0.4em; vertical-align: super; font-weight: 700; }
+    .pr-fig__star:hover { color: var(--hot-ink); }
+    .pr-fig__metric { font-weight: 600; font-size: 0.98rem; color: var(--ink); line-height: 1.3; }
+    .pr-fig__note { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+
+    /* ---------- pull quote ---------- */
+
+    .pr-quote {
+      margin: clamp(2.4rem, 5vw, 3.6rem) 0 0;
+      border-top: 2px solid var(--ink);
+      padding-top: 1.6rem;
+      max-width: 42ch;
+    }
+    .pr-quote__mark { display: block; font-family: var(--font-display); font-weight: 800; font-size: clamp(3rem, 7vw, 5rem); line-height: 0.5; color: var(--hot); margin-bottom: 0.5rem; }
+    .pr-quote p {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(1.4rem, 3vw, 2.15rem);
+      line-height: 1.16;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 1.2rem;
+      text-transform: none;
+    }
+    .pr-quote cite {
+      font-style: normal;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      border-top: 1px solid var(--rule-soft);
+      padding-top: 0.85rem;
+    }
+    .pr-quote cite b { color: var(--hot-ink); font-weight: 700; }
+
+    /* ---------- split (case detail / service detail) ---------- */
+
+    .pr-split { display: grid; grid-template-columns: 1fr; gap: clamp(2rem, 4vw, 3.4rem); }
+    @media (min-width: 940px) { .pr-split { grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.9fr); align-items: start; } }
+    .pr-split__aside { border-top: 2px solid var(--ink); padding-top: 1.4rem; }
+    @media (min-width: 940px) { .pr-split__aside--sticky { position: sticky; top: 6.5rem; } }
+
+    .pr-aside-h {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 1.1rem;
+    }
+
+    .pr-deliverables { list-style: none; margin: 0 0 1.6rem; padding: 0; display: grid; gap: 0.7rem; }
+    .pr-deliverables li {
+      position: relative;
+      padding-left: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--body-ink);
+      border-bottom: 1px solid var(--rule-faint);
+      padding-bottom: 0.7rem;
+    }
+    .pr-deliverables li::before { content: "\2192"; position: absolute; left: 0; color: var(--hot-ink); font-weight: 700; }
+
+    /* ---------- steps (method) ---------- */
+
+    .pr-steps { border-top: 2px solid var(--ink); }
+    .pr-step {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.6rem 2rem;
+      padding: clamp(1.6rem, 3vw, 2.4rem) 0;
+      border-bottom: 1px solid var(--ink);
+    }
+    @media (min-width: 860px) { .pr-step { grid-template-columns: 6rem minmax(0, 0.85fr) minmax(0, 1.15fr); align-items: baseline; } }
+    .pr-step__n {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      line-height: 0.8;
+      letter-spacing: -0.03em;
+      color: transparent;
+      -webkit-text-stroke: 2px var(--hot);
+    }
+    .pr-step__title { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.25rem, 2.4vw, 1.75rem); text-transform: uppercase; letter-spacing: -0.015em; }
+    .pr-step__body { color: var(--muted); font-size: 0.98rem; margin: 0; }
+
+    /* ---------- people (team) ---------- */
+
+    .pr-people { border-top: 2px solid var(--ink); }
+    .pr-person {
+      display: grid;
+      grid-template-columns: 4.4rem minmax(0, 1fr);
+      gap: 1rem 1.4rem;
+      padding: clamp(1.4rem, 2.6vw, 2rem) 0;
+      border-bottom: 1px solid var(--ink);
+      align-items: start;
+    }
+    @media (min-width: 900px) { .pr-person { grid-template-columns: 4.4rem minmax(0, 0.65fr) minmax(0, 1.35fr); } }
+    .pr-mono {
+      width: 4.4rem;
+      height: 4.4rem;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--ink);
+      background: var(--paper-2);
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.35rem;
+      letter-spacing: 0.02em;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .pr-person:hover .pr-mono { background: var(--hot); color: var(--on-ink); border-color: var(--hot); }
+    .pr-person h3 { font-size: 1.12rem; margin-bottom: 0.3rem; text-transform: uppercase; }
+    .pr-person__role { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--hot-ink); margin: 0; }
+    .pr-person__bio { color: var(--muted); font-size: 0.95rem; margin: 0; }
+
+    /* ---------- rates (pricing) ---------- */
+
+    .pr-rates {
+      display: grid;
+      grid-template-columns: 1fr;
+      border-top: 2px solid var(--ink);
+      border-left: 2px solid var(--ink);
+    }
+    @media (min-width: 900px) { .pr-rates { grid-template-columns: repeat(3, 1fr); } }
+    .pr-rate {
+      display: flex;
+      flex-direction: column;
+      padding: clamp(1.6rem, 3vw, 2.3rem) clamp(1.3rem, 2.2vw, 1.9rem);
+      border-right: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+    .pr-rate--featured { background: var(--paper-2); box-shadow: inset 0 4px 0 0 var(--hot); }
+    .pr-rate__tier { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--hot-ink); margin-bottom: 0.8rem; }
+    .pr-rate__price { font-family: var(--font-display); font-weight: 800; font-size: clamp(2rem, 4vw, 2.9rem); line-height: 0.95; letter-spacing: -0.03em; margin-bottom: 0.9rem; }
+    .pr-rate__blurb { color: var(--muted); font-size: 0.94rem; padding-bottom: 1.1rem; border-bottom: 1px solid var(--rule-soft); }
+    .pr-rate__features { list-style: none; margin: 1.2rem 0 1.7rem; padding: 0; display: grid; gap: 0.7rem; font-size: 0.93rem; }
+    .pr-rate__features li { position: relative; padding-left: 1.5rem; color: var(--body-ink); }
+    .pr-rate__features li::before { content: "\2192"; position: absolute; left: 0; color: var(--hot-ink); font-weight: 700; }
+    .pr-rate .pr-btn { margin-top: auto; align-self: flex-start; }
+
+    /* ---------- questions (faq) ---------- */
+
+    .pr-qa { border-top: 2px solid var(--ink); max-width: 82ch; }
+    .pr-qa__item { border-bottom: 1px solid var(--ink); }
+    .pr-qa__item summary {
+      display: grid;
+      grid-template-columns: 3rem minmax(0, 1fr) 1.8rem;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 1.3rem 0;
+      cursor: pointer;
+      list-style: none;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(1.08rem, 2vw, 1.4rem);
+      line-height: 1.18;
+      text-transform: uppercase;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      transition: color 0.24s ease;
+    }
+    .pr-qa__item summary::-webkit-details-marker { display: none; }
+    .pr-qa__item summary:hover { color: var(--hot-ink); }
+    .pr-qa__n { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; color: var(--muted); }
+    .pr-qa__sign { justify-self: end; font-family: var(--font-mono); font-weight: 700; font-size: 1.2rem; line-height: 1; color: var(--hot-ink); }
+    .pr-qa__item[open] .pr-qa__sign { color: var(--hot-ink); }
+    .pr-qa__a { margin: 0 0 1.4rem calc(3rem + 1rem); max-width: 64ch; color: var(--muted); font-size: 0.99rem; }
+    @media (max-width: 720px) {
+      .pr-qa__item summary { grid-template-columns: 2.2rem minmax(0, 1fr) 1.4rem; }
+      .pr-qa__a { margin-left: 0; }
+    }
+    .pr-qa__item[open] .pr-qa__a { animation: pr-rise 0.4s ease both; }
+
+    /* ---------- correspondence slab ---------- */
+
+    .pr-slab {
+      background: var(--ink2);
+      color: var(--on-ink);
+      margin-top: clamp(3rem, 6vw, 5rem);
+      border-top: 2px solid var(--ink);
+    }
+    .pr-sec + .pr-slab { margin-top: 0; }
+    .pr-slab__inner {
+      display: grid;
+      gap: clamp(1.8rem, 4vw, 3rem);
+      padding: clamp(2.8rem, 6vw, 4.6rem) var(--edge);
+      align-items: end;
+    }
+    @media (min-width: 900px) { .pr-slab__inner { grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr); } }
+    .pr-slab__title { color: var(--on-ink); font-size: clamp(1.9rem, 4.6vw, 3.2rem); text-transform: uppercase; max-width: 16ch; }
+    .pr-slab__note { color: color-mix(in srgb, var(--on-ink) 74%, transparent); max-width: 44ch; margin: 1rem 0 0; }
+    .pr-slab__actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+    .pr-slab__mail {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--on-ink);
+      text-decoration: none;
+      border-bottom: 2px solid var(--hot);
+      padding-bottom: 0.25rem;
+      word-break: break-all;
+    }
+    .pr-slab__mail:hover { color: var(--hot); }
+
+    /* ---------- contact ---------- */
+
+    .pr-form { max-width: 44rem; }
+    .pr-field { display: grid; gap: 0.5rem; margin-bottom: 1.7rem; }
+    .pr-field label { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+    .pr-field input, .pr-field textarea {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--ink);
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid var(--ink);
+      padding: 0.7rem 0;
+      border-radius: 0;
+      width: 100%;
+      transition: border-color 0.28s ease, box-shadow 0.28s ease;
+    }
+    .pr-field textarea { resize: vertical; min-height: 8rem; line-height: 1.6; }
+    .pr-field input:focus, .pr-field textarea:focus { outline: none; border-bottom-color: var(--hot); box-shadow: 0 2px 0 0 var(--hot); }
+    .pr-field input::placeholder, .pr-field textarea::placeholder { color: color-mix(in srgb, var(--muted) 68%, transparent); }
+    .pr-form__note { font-family: var(--font-mono); font-size: 0.72rem; line-height: 1.6; color: var(--muted); max-width: 62ch; margin-top: 1.3rem; }
+    .pr-form__note a { color: var(--hot-ink); }
+
+    .pr-dir { border-top: 2px solid var(--ink); }
+    .pr-dir__row { padding: 1.05rem 0; border-bottom: 1px solid var(--ink); }
+    .pr-dir__label { font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.35rem; }
+    .pr-dir__val { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; line-height: 1.32; color: var(--ink); }
+    .pr-dir__val a { color: var(--hot-ink); text-decoration: none; border-bottom: 2px solid color-mix(in srgb, var(--hot) 45%, transparent); }
+    .pr-dir__val a:hover { border-bottom-color: var(--hot); }
+    .pr-dir__val small { display: block; font-family: var(--font-body); font-weight: 400; font-size: 0.85rem; color: var(--muted); margin-top: 0.3rem; }
+
+    /* ---------- legal ---------- */
+
+    .pr-legal-body { max-width: 72ch; }
+    .pr-legal-sec { padding-top: 2rem; }
+    .pr-legal-sec h2 {
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      text-transform: uppercase;
+      display: grid;
+      grid-template-columns: 3rem minmax(0, 1fr);
+      gap: 0.8rem;
+      align-items: baseline;
+      border-top: 2px solid var(--ink);
+      padding-top: 1rem;
+    }
+    .pr-legal-sec h2 span:first-child { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--hot-ink); }
+    .pr-legal-sec p { font-size: 0.99rem; }
+
+    .pr-entity {
+      margin-top: 2.6rem;
+      border: 2px solid var(--ink);
+      padding: clamp(1.3rem, 3vw, 2rem);
+      background: var(--paper-2);
+    }
+    .pr-entity h3 { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.9rem; }
+    .pr-entity p { font-size: 0.95rem; margin-bottom: 0.35rem; }
+    .pr-entity strong { color: var(--ink); }
+    .pr-entity a { color: var(--hot-ink); }
+
+    /* ---------- footer ---------- */
+
+    .pr-foot {
+      background: var(--surface);
+      border-top: 2px solid var(--ink);
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+    main:has(> .pr-slab:last-child) + .pr-foot { margin-top: 0; }
+
+    .pr-foot__top {
+      display: grid;
+      gap: clamp(1.8rem, 4vw, 3rem);
+      padding: clamp(2.6rem, 5vw, 3.8rem) 0 clamp(1.8rem, 3vw, 2.6rem);
+    }
+    @media (min-width: 900px) { .pr-foot__top { grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr)); } }
+
+    .pr-foot__brand .pr-brand { margin-bottom: 0.9rem; }
+    .pr-foot__tagline { color: var(--muted); font-size: 0.94rem; max-width: 34ch; }
+
+    .pr-foot__col h3 { font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+    .pr-foot__col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+    .pr-foot__col a { font-size: 0.92rem; text-decoration: none; color: var(--ink); }
+    .pr-foot__col a:hover { color: var(--hot-ink); }
+
+    .pr-legal {
+      border-top: 2px solid var(--ink);
+      padding: 1.8rem 0 0.4rem;
+    }
+    .pr-legal__entity { font-family: var(--font-display); font-weight: 800; font-size: 1.02rem; text-transform: uppercase; color: var(--ink); margin-bottom: 0.4rem; }
+    .pr-legal__line { font-size: 0.86rem; color: var(--muted); margin-bottom: 0.35rem; }
+    .pr-legal__line a { color: var(--hot-ink); text-decoration: none; font-weight: 600; }
+    .pr-legal__line a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    .pr-disclaimer {
+      margin-top: 1.4rem;
+      border: 2px solid var(--rule-soft);
+      padding: 1.1rem 1.3rem;
+      font-size: 0.79rem;
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 94ch;
+    }
+    .pr-disclaimer strong { display: block; font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink); margin-bottom: 0.4rem; }
+
+    .pr-copyright {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem 1.5rem;
+      border-top: 1px solid var(--rule-soft);
+      margin-top: 1.5rem;
+      padding: 1.1rem 0 2.2rem;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ---------- motion ---------- */
+
+    @keyframes pr-rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+    @keyframes pr-in { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+    @keyframes pr-word { from { opacity: 0; transform: translateY(0.55em); } to { opacity: 1; transform: none; } }
+    /* scroll reveals never fade fully out — content stays readable in a
+       static capture (crawler / manual ad review screenshot). */
+    @keyframes pr-lift { from { opacity: 0.62; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+
+    .pr-in { animation: pr-in 0.8s cubic-bezier(0.16, 0.84, 0.44, 1) both; animation-delay: calc(var(--i, 0) * 80ms); }
+    .pr-hero__title .pr-w { animation: pr-word 0.7s cubic-bezier(0.16, 0.84, 0.44, 1) both; animation-delay: calc(var(--i, 0) * 55ms); }
+
+    @supports (animation-timeline: view()) {
+      @media (prefers-reduced-motion: no-preference) {
+        .pr-rise { animation: pr-lift linear both; animation-timeline: view(); animation-range: entry 3% cover 22%; }
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .pr-in, .pr-hero__title .pr-w, .pr-rise, .pr-qa__item[open] .pr-qa__a { animation: none !important; opacity: 1 !important; transform: none !important; }
+      * { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="pr-skip" href="#main">Skip to content</a>
+  <header class="pr-top">
+    <div class="pr-wrap">
+      <div class="pr-wire">
+        <span>We build campaigns that survive a second look.</span>
+        <span>Enquiries <span class="pr-wire__hot">&mdash;</span> <a href="mailto:contact@marketing-events-limited.marketing">contact@marketing-events-limited.marketing</a></span>
+      </div>
+      <div class="pr-bar">
+        <a class="pr-brand" href="/">
+          <span class="pr-brand__bar" aria-hidden="true"></span>
+          <span class="pr-brand__name">Marketing Events Limited</span>
+        </a>
+        <nav class="pr-nav" aria-label="Primary">
+            <a class="pr-nav__link" href="/services/"><span class="pr-nav__dot" aria-hidden="true"></span>Services</a>
+            <a class="pr-nav__link" href="/case-studies/"><span class="pr-nav__dot" aria-hidden="true"></span>Case Files</a>
+            <a class="pr-nav__link" href="/about/"><span class="pr-nav__dot" aria-hidden="true"></span>Studio</a>
+            <a class="pr-nav__link" href="/process/"><span class="pr-nav__dot" aria-hidden="true"></span>Method</a>
+            <a class="pr-nav__link" href="/pricing/"><span class="pr-nav__dot" aria-hidden="true"></span>Rates</a>
+            <a class="pr-nav__link" href="/blog/"><span class="pr-nav__dot" aria-hidden="true"></span>Journal</a>
+            <a class="pr-nav__link" href="/contact/"><span class="pr-nav__dot" aria-hidden="true"></span>Contact</a>
+        </nav>
+        <a class="pr-btn pr-btn--solid" href="/contact/"><span>Book a Call</span><span class="pr-btn__mark" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pr-sec pr-sec--flush pr-sec--tight">
+      <div class="pr-wrap">
+        <div class="pr-split">
+          <div>
+            <p class="pr-tag"><span aria-hidden="true">[</span> 04 <span class="pr-tag__slash" aria-hidden="true">/</span> SERVICE <span aria-hidden="true">]</span></p>
+            <h1 class="pr-head__title" style="font-size:clamp(2.1rem,6vw,4rem);">Content Marketing</h1>
+            <p class="pr-standfirst">Content briefed around the questions your buyers ask right before they convert. Run in-house by Marketing Events Limited, not outsourced.</p>
+            <div class="pr-prose pr-prose--lead pr-rise" style="margin-top:clamp(1.8rem,3.5vw,2.6rem);border-top:2px solid var(--ink);padding-top:1.6rem;">
+              <p>Content Marketing at Marketing Events Limited starts with a full audit of what’s currently working and what isn’t — no cookie-cutter checklist, no vanity metrics. We write for the specific questions your buyers ask right before they’re ready to talk to sales, not for generic top-of-funnel traffic.</p>
+          <p>From there we build a plan specific to your business: a content calendar mapped to your sales stages, briefs written by people who’ve read your competitors’ content so we don’t repeat it, and distribution planned before a single word is written.</p>
+          <p>Content starts contributing to pipeline instead of just page views, because it was built to move someone toward a decision. We report on the metrics that actually predict revenue, not clicks for their own sake, and we adjust the plan every month based on what the data shows.</p>
+            </div>
+          </div>
+          <aside class="pr-split__aside pr-split__aside--sticky">
+            <p class="pr-aside-h">In this service</p>
+            <ul class="pr-deliverables">
+              <li>Content strategy and editorial calendar</li>
+              <li>SEO-informed content briefs</li>
+              <li>Long-form articles and guides</li>
+              <li>Distribution plan across owned channels</li>
+              <li>Monthly performance and engagement reporting</li>
+            </ul>
+            <a class="pr-btn pr-btn--solid" href="/contact/"><span>Scope this service</span><span class="pr-btn__mark" aria-hidden="true">&rarr;</span></a>
+          </aside>
+        </div>
+
+        <div style="margin-top:clamp(2.6rem,5vw,4rem);">
+          <p class="pr-tag"><span aria-hidden="true">[</span> Q <span class="pr-tag__slash" aria-hidden="true">/</span> ABOUT CONTENT MARKETING <span aria-hidden="true">]</span></p>
+          <div class="pr-qa" style="max-width:none;">
+            <details class="pr-qa__item">
+              <summary>
+                <span class="pr-qa__n">01</span>
+                <span>How long until we see results from Content Marketing?</span>
+                <span class="pr-qa__sign" aria-hidden="true">+</span>
+              </summary>
+              <p class="pr-qa__a">Most Marketing Events Limited clients see initial movement within 8 to 12 weeks to build initial momentum; we’ll give you a realistic timeline specific to your starting point on the first call.</p>
+            </details>
+            <details class="pr-qa__item">
+              <summary>
+                <span class="pr-qa__n">02</span>
+                <span>Do we need a long-term contract for Content Marketing?</span>
+                <span class="pr-qa__sign" aria-hidden="true">+</span>
+              </summary>
+              <p class="pr-qa__a">No. Engagements run month-to-month after an initial 60-day onboarding period, and you can pause or cancel with 30 days’ notice.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pr-slab">
+      <div class="pr-wrap pr-slab__inner">
+        <div class="pr-slab__lead">
+          <p class="pr-tag pr-tag--invert"><span aria-hidden="true">[</span> CORRESPONDENCE <span aria-hidden="true">]</span></p>
+          <h2 class="pr-slab__title">Talk to us about Content Marketing.</h2>
+          <p class="pr-slab__note">We will tell you what it would take, what it would cost, and whether it is the right first move.</p>
+        </div>
+        <div class="pr-slab__actions">
+          <a class="pr-btn pr-btn--paper" href="/contact/"><span>Start a conversation</span><span class="pr-btn__mark" aria-hidden="true">&rarr;</span></a>
+          <a class="pr-slab__mail" href="mailto:contact@marketing-events-limited.marketing">contact@marketing-events-limited.marketing</a>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <footer class="pr-foot">
+    <div class="pr-wrap">
+      <div class="pr-foot__top">
+        <div class="pr-foot__brand">
+          <a class="pr-brand" href="/">
+            <span class="pr-brand__bar" aria-hidden="true"></span>
+            <span class="pr-brand__name">Marketing Events Limited</span>
+          </a>
+          <p class="pr-foot__tagline">We build campaigns that survive a second look.</p>
+        </div>
+        <nav class="pr-foot__col" aria-label="Studio">
+            <h3>Studio</h3>
+            <ul>
+              <li><a href="/about/">Studio</a></li>
+              <li><a href="/team/">The Team</a></li>
+              <li><a href="/process/">Method</a></li>
+              <li><a href="/case-studies/">Case Files</a></li>
+            </ul>
+          </nav>
+          <nav class="pr-foot__col" aria-label="Practice">
+            <h3>Practice</h3>
+            <ul>
+              <li><a href="/services/">All Services</a></li>
+              <li><a href="/pricing/">Rates</a></li>
+              <li><a href="/blog/">Journal</a></li>
+              <li><a href="/faq/">FAQ</a></li>
+            </ul>
+          </nav>
+          <nav class="pr-foot__col" aria-label="Legal">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="/privacy/">Privacy Policy</a></li>
+              <li><a href="/terms/">Terms of Service</a></li>
+              <li><a href="/cookies/">Cookie Policy</a></li>
+              <li><a href="/disclaimer/">Disclaimer</a></li>
+            </ul>
+          </nav>
+      </div>
+      <div class="pr-legal">
+        <p class="pr-legal__entity">MARKETING EVENTS LIMITED</p>
+        <p class="pr-legal__line">RPG The Copper Room, Trinity Way, Salford, England M3 7BG &middot; Company No. 12480079</p>
+        <p class="pr-legal__line">
+          <a href="mailto:contact@marketing-events-limited.marketing">contact@marketing-events-limited.marketing</a>
+          &middot;
+          <a href="tel:+441614960184">+44 161 496 0184</a>
+        </p>
+        <div class="pr-disclaimer">
+          <strong>Disclaimer</strong>
+          Marketing Events Limited is an independent marketing services provider. Marketing results depend on many factors outside our control, including market conditions, competitor activity, account history, budget, and the policies of third-party advertising platforms; results shown on this website are specific to the clients described and are not a guarantee of future performance for any other business. Marketing Events Limited is not affiliated with, endorsed by, or officially connected to Google, Google Ads, Meta, Facebook, Instagram, TikTok, or any other advertising or search platform referenced on this website. All trademarks belong to their respective owners.
+        </div>
+      </div>
+      <div class="pr-copyright">
+        <span>&copy; 2026 MARKETING EVENTS LIMITED. All rights reserved.</span>
+        <span>Marketing Events Limited is a trading brand of MARKETING EVENTS LIMITED.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
