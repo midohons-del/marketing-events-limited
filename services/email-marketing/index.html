@@ -6,12 +6,17 @@
   <title>Email Marketing — Marketing Events Limited</title>
   <meta name="description" content="Lifecycle flows that turn your list into a predictable revenue channel. Run in-house by Marketing Events Limited, not outsourced." />
   <link rel="canonical" href="https://marketing-events-limited.marketing/services/email-marketing/" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:image" content="https://marketing-events-limited.marketing/og-image.png" />
+  <meta name="twitter:image" content="https://marketing-events-limited.marketing/og-image.png" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Email Marketing — Marketing Events Limited" />
   <meta property="og:description" content="Lifecycle flows that turn your list into a predictable revenue channel. Run in-house by Marketing Events Limited, not outsourced." />
   <meta property="og:url" content="https://marketing-events-limited.marketing/services/email-marketing/" />
   <meta property="og:site_name" content="Marketing Events Limited" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Email Marketing — Marketing Events Limited" />
   <meta name="twitter:description" content="Lifecycle flows that turn your list into a predictable revenue channel. Run in-house by Marketing Events Limited, not outsourced." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,7 +27,7 @@
     :root {
       --paper: #ECEAE3;
       --surface: #FFFFFF;
-      --hot: #FF2D00;
+      --hot: #0151FE;
       --ink2: #17150F;
       --ink: #17150F;
       --muted: #6B6656;
@@ -294,7 +299,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 1.25rem 2rem;
+      gap: 1.25rem 1.75rem;
       flex-wrap: wrap;
       padding: 0.85rem 0;
     }
@@ -313,6 +318,27 @@
       flex: none;
       transform: skewX(-9deg);
     }
+    /* Brand mark (2408x1164, ~2.07:1 landscape). Sized below the accent-bar
+       fallback's 1.55rem — at 1.5rem the mark's extra width vs. the 9px bar
+       tipped .pr-bar into a wrapped second row at common desktop widths
+       (measured regression), so height is trimmed to 1.3rem (paired with
+       tighter .pr-nav / .pr-bar gaps below) to recover that headroom while
+       keeping the mark visually balanced against the brand-name text. color
+       resolves the mark's currentColor fill to --ink; the mark's own
+       accent rect has a hardcoded fill and stays blue regardless. --ink is
+       dark against --surface in both the header and footer, so no separate
+       footer override is needed here. */
+    .pr-brand__logo {
+      height: 1.3rem;
+      width: auto;
+      flex: none;
+      color: var(--ink);
+    }
+    .pr-brand__logo svg {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
     .pr-brand__name {
       font-family: var(--font-display);
       font-weight: 800;
@@ -326,7 +352,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 0.4rem 1.5rem;
+      gap: 0.4rem 1.25rem;
     }
     .pr-nav__link {
       display: inline-flex;
@@ -859,7 +885,36 @@
       </div>
       <div class="pr-bar">
         <a class="pr-brand" href="/">
-          <span class="pr-brand__bar" aria-hidden="true"></span>
+          <span class="pr-brand__logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2408 1164" role="img" aria-labelledby="melTitle">
+<title id="melTitle">MEL — Marketing Events Limited</title>
+<g transform="translate(0.000000,1164.000000) scale(0.100000,-0.100000)" fill="currentColor"><path d="M39 11183 l-1 -458 1 -1378 0 -1378 8 -14 8 -14 146 -153 145 -153
+154 -169 155 -170 180 -191 180 -191 230 -249 230 -249 240 -255 240 -255 80
+-87 80 -88 134 -143 135 -143 100 -105 101 -105 100 -110 100 -109 175 -186
+175 -185 66 -70 66 -70 69 -76 69 -77 235 -249 235 -248 117 -125 117 -125 88
+-92 89 -93 11 0 12 0 183 197 183 198 116 120 115 120 165 174 164 173 89 97
+89 96 176 185 175 185 132 135 132 135 11 23 12 23 22 -3 22 -3 2 -2614 3
+-2615 12 -8 13 -8 1146 0 1147 0 11 13 11 14 0 5764 0 5764 -14 3 -14 3 -39
+-42 -38 -42 -15 -16 -16 -16 -180 -185 -179 -185 -265 -275 -266 -275 -254
+-264 -255 -263 -135 -143 -135 -142 -235 -244 -235 -243 -195 -201 -196 -200
+-94 -100 -95 -100 -195 -200 -195 -200 -114 -120 -114 -120 -221 -225 -221
+-225 -124 -127 -123 -128 -7 0 -8 0 -105 108 -105 107 -84 90 -84 90 -145 150
+-146 150 -134 145 -135 145 -170 175 -170 175 -145 155 -144 155 -181 190
+-181 190 -79 85 -79 85 -110 115 -111 115 -151 160 -151 160 -63 70 -64 70
+-160 169 -161 170 -25 26 -25 26 -135 145 -135 144 -94 100 -95 100 -101 105
+-102 105 -129 140 -130 140 -27 27 -27 27 0 11 0 10 -70 0 -70 0 -1 -457z
+M13431 11603 l-3994 -3 -12 -10 -13 -11 -1 -1079 -2 -1079 18 -9 18 -8 4018 1
+4018 2 9 9 10 10 0 1079 1 1080 -23 12 -23 13 -15 -3 -15 -2 -3994 -2z M18647
+11593 l-7 -6 0 -5794 0 -5793 2700 0 2700 0 0 1090 0 1089 -17 10 -18 9 -1583
+-1 -1584 0 -9 14 -8 14 -1 4678 0 4678 -5 10 -6 9 -1078 0 -1078 0 -6 -7z
+M12256 6833 l-2819 -3 -13 -11 -14 -11 0 -1074 0 -1073 10 -6 9 -6 2833 -4
+2832 -3 18 9 18 10 0 1079 0 1079 -19 11 -20 10 -8 -2 -8 -3 -2819 -2z M40
+6608 l0 -13 0 -3274 0 -3273 6 -9 5 -9 1065 0 1065 0 20 10 19 11 0 2149 0
+2150 -223 233 -223 232 -120 127 -119 127 -174 183 -175 183 -105 110 -106
+111 -75 79 -74 80 -86 90 -87 90 -293 310 -293 310 -14 3 -13 3 0 -13z M9427
+2202 l-17 -18 0 -1069 -1 -1068 9 -9 10 -10 4022 1 4022 0 14 12 14 11 0 1074
+0 1073 -19 11 -20 10 -4009 0 -4009 0 -16 -18z"/></g>
+<rect x="1576" y="480" width="176" height="220" fill="#0151FE"/>
+</svg></span>
           <span class="pr-brand__name">Marketing Events Limited</span>
         </a>
         <nav class="pr-nav" aria-label="Primary">
@@ -947,9 +1002,38 @@
       <div class="pr-foot__top">
         <div class="pr-foot__brand">
           <a class="pr-brand" href="/">
-            <span class="pr-brand__bar" aria-hidden="true"></span>
-            <span class="pr-brand__name">Marketing Events Limited</span>
-          </a>
+          <span class="pr-brand__logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2408 1164" role="img" aria-labelledby="melTitle">
+<title id="melTitle">MEL — Marketing Events Limited</title>
+<g transform="translate(0.000000,1164.000000) scale(0.100000,-0.100000)" fill="currentColor"><path d="M39 11183 l-1 -458 1 -1378 0 -1378 8 -14 8 -14 146 -153 145 -153
+154 -169 155 -170 180 -191 180 -191 230 -249 230 -249 240 -255 240 -255 80
+-87 80 -88 134 -143 135 -143 100 -105 101 -105 100 -110 100 -109 175 -186
+175 -185 66 -70 66 -70 69 -76 69 -77 235 -249 235 -248 117 -125 117 -125 88
+-92 89 -93 11 0 12 0 183 197 183 198 116 120 115 120 165 174 164 173 89 97
+89 96 176 185 175 185 132 135 132 135 11 23 12 23 22 -3 22 -3 2 -2614 3
+-2615 12 -8 13 -8 1146 0 1147 0 11 13 11 14 0 5764 0 5764 -14 3 -14 3 -39
+-42 -38 -42 -15 -16 -16 -16 -180 -185 -179 -185 -265 -275 -266 -275 -254
+-264 -255 -263 -135 -143 -135 -142 -235 -244 -235 -243 -195 -201 -196 -200
+-94 -100 -95 -100 -195 -200 -195 -200 -114 -120 -114 -120 -221 -225 -221
+-225 -124 -127 -123 -128 -7 0 -8 0 -105 108 -105 107 -84 90 -84 90 -145 150
+-146 150 -134 145 -135 145 -170 175 -170 175 -145 155 -144 155 -181 190
+-181 190 -79 85 -79 85 -110 115 -111 115 -151 160 -151 160 -63 70 -64 70
+-160 169 -161 170 -25 26 -25 26 -135 145 -135 144 -94 100 -95 100 -101 105
+-102 105 -129 140 -130 140 -27 27 -27 27 0 11 0 10 -70 0 -70 0 -1 -457z
+M13431 11603 l-3994 -3 -12 -10 -13 -11 -1 -1079 -2 -1079 18 -9 18 -8 4018 1
+4018 2 9 9 10 10 0 1079 1 1080 -23 12 -23 13 -15 -3 -15 -2 -3994 -2z M18647
+11593 l-7 -6 0 -5794 0 -5793 2700 0 2700 0 0 1090 0 1089 -17 10 -18 9 -1583
+-1 -1584 0 -9 14 -8 14 -1 4678 0 4678 -5 10 -6 9 -1078 0 -1078 0 -6 -7z
+M12256 6833 l-2819 -3 -13 -11 -14 -11 0 -1074 0 -1073 10 -6 9 -6 2833 -4
+2832 -3 18 9 18 10 0 1079 0 1079 -19 11 -20 10 -8 -2 -8 -3 -2819 -2z M40
+6608 l0 -13 0 -3274 0 -3273 6 -9 5 -9 1065 0 1065 0 20 10 19 11 0 2149 0
+2150 -223 233 -223 232 -120 127 -119 127 -174 183 -175 183 -105 110 -106
+111 -75 79 -74 80 -86 90 -87 90 -293 310 -293 310 -14 3 -13 3 0 -13z M9427
+2202 l-17 -18 0 -1069 -1 -1068 9 -9 10 -10 4022 1 4022 0 14 12 14 11 0 1074
+0 1073 -19 11 -20 10 -4009 0 -4009 0 -16 -18z"/></g>
+<rect x="1576" y="480" width="176" height="220" fill="#0151FE"/>
+</svg></span>
+          <span class="pr-brand__name">Marketing Events Limited</span>
+        </a>
           <p class="pr-foot__tagline">We build campaigns that survive a second look.</p>
         </div>
         <nav class="pr-foot__col" aria-label="Studio">
