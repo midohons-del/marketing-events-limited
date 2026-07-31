@@ -24,6 +24,38 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Marketing Events Limited","legalName":"MARKETING EVENTS LIMITED","url":"https://marketing-events-limited.marketing/","email":"contact@marketing-events-limited.marketing","telephone":"+44 161 496 0184","description":"Marketing Events Limited is a full-service marketing agency for Education & EdTech, Real Estate, Fintech, and E-commerce & DTC companies — 7 core services, 3 documented case studies, one senior team with no junior handoffs.","address":{"@type":"PostalAddress","streetAddress":"RPG The Copper Room, Trinity Way, Salford, England M3 7BG"},"identifier":{"@type":"PropertyValue","name":"Company No.","value":"12480079"}}</script>
   <style>
+    /* Metric-compatible fallback faces so first paint (system font, before
+       the webfont's CSS+woff2 round trip resolves) lays out at nearly the
+       same width as the eventual webfont — this is what stops the header
+       from visibly growing then shrinking (FOUT reflow) on a hard refresh.
+       size-adjust values were measured directly (Chrome, canvas
+       measureText, brand name + h1 sample at their real weights/sizes);
+       ascent/descent/line-gap overrides keep vertical metrics aligned so
+       line-height-driven heights don't shift either. */
+    @font-face {
+      font-family: "Display Fallback";
+      src: local("Arial Black"), local("Arial Bold"), local("Helvetica Bold");
+      size-adjust: 87.4%;
+      ascent-override: 90%;
+      descent-override: 22%;
+      line-gap-override: 0%;
+      font-weight: 600 800;
+    }
+    @font-face {
+      font-family: "Body Fallback";
+      src: local("Helvetica Neue"), local("Helvetica"), local("Arial");
+      size-adjust: 98.5%;
+      line-gap-override: 0%;
+      font-weight: 400 700;
+    }
+    @font-face {
+      font-family: "Mono Fallback";
+      src: local("Menlo"), local("Courier New");
+      size-adjust: 102%;
+      line-gap-override: 0%;
+      font-weight: 400 700;
+    }
+
     :root {
       --paper: #ECEAE3;
       --surface: #FFFFFF;
@@ -31,9 +63,9 @@
       --ink2: #17150F;
       --ink: #17150F;
       --muted: #6B6656;
-      --font-display: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
-      --font-body: "Archivo", Helvetica, Arial, sans-serif;
-      --font-mono: "Space Mono", "Courier New", ui-monospace, monospace;
+      --font-display: "Bricolage Grotesque", "Display Fallback", "Arial Black", system-ui, sans-serif;
+      --font-body: "Archivo", "Body Fallback", Helvetica, Arial, sans-serif;
+      --font-mono: "Space Mono", "Mono Fallback", "Courier New", ui-monospace, monospace;
 
       --rule: var(--ink);
       --rule-soft: color-mix(in srgb, var(--ink) 18%, transparent);
